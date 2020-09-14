@@ -66,5 +66,5 @@ export class SlugifyPipe implements PipeTransform {
     for (let i = length; i > 0; --i)
       result += mask[Math.floor(Math.random() * mask.length)];
     return result;
-}
+  }
 }

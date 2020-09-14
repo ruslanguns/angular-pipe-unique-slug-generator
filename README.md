@@ -1,6 +1,8 @@
-# Angular Unique Slug Generator
+# Angular Unique Slug Generator Pipe
 
-This is an Angular repository with a playground of an Angular Pipe for generating slug from an string of characters, it supports English & Spanish Characters and also comes with unique slug options which makes sure you are generating an unique slug for your app. 
+This is an Angular repository with a playground of an Angular Pipe for generating slug from an string of characters, it supports English & Spanish Characters and also comes with unique slug options which makes sure you are generating an unique slug for your app.
+
+>If you want to see a demo with all this code checkout my [demo on Stackblitz](https://stackblitz.com/edit/angular-slugify-pipe?file=src/app/slugify.pipe.ts)
 
 ## How to use it?
 
@@ -30,6 +32,9 @@ Before Pipe:
 After Pipe:
 
 `este-articulo-habla-sobre-angular-y-sus-slugs-potentes-dgaode`
+
+## TODO
+- [ ] Publish a npm library
 
 ## Author 
 **Ruslan Gonzalez**

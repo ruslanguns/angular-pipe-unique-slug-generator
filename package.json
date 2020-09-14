@@ -1,5 +1,5 @@
 {
-  "name": "angular-unique-slug-generator",
+  "name": "angular-pipe-unique-slug-generator",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
