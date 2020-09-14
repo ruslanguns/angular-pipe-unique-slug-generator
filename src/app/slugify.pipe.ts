@@ -21,11 +21,11 @@ export class SlugifyPipe implements PipeTransform {
   transform(input: string, slugifyOptions?: SlugifyPipeOptions): string {
 
     // Default values
-    const unique = slugifyOptions && slugifyOptions.unique || false;
+    const unique = slugifyOptions && typeof slugifyOptions.unique === 'boolean' && slugifyOptions.unique || false;
     const uniqueOptions = unique && slugifyOptions.uniqueOptions;
     const { chars, randomLength, separator } = {
-      randomLength: (uniqueOptions && uniqueOptions.randomLength) || 6,
-      chars: (uniqueOptions && uniqueOptions.chars) || ["lowercase", "numeric"],
+      randomLength: (uniqueOptions && typeof uniqueOptions.randomLength === 'number' && uniqueOptions.randomLength) || 6,
+      chars: (uniqueOptions && Array.isArray(uniqueOptions.chars) && uniqueOptions.chars) || ["lowercase", "numeric"],
       separator: uniqueOptions.separator || '-'
     };
 
